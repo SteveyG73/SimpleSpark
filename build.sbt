@@ -12,8 +12,10 @@ resolvers += "mulesoft" at "https://repository.mulesoft.org/nexus/content/reposi
 
 
 //3rd party dependencies
-libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
-libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provided"
+//libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
+//libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion
+libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
 libraryDependencies += "org.apache.spark" %% "spark-avro" % sparkVersion
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
 libraryDependencies += "com.github.scopt" %% "scopt" % "3.7.1"

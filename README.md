@@ -23,7 +23,7 @@ Via IntelliJ, set the following parameters in your run config for your job and i
 ## Running directly on EMR
 
 ```bash
-aws emr ssh --cluster-id <cluster> --key-pair-file ~/.ssh/DataTeam.pem
+aws emr ssh --cluster-id <cluster> --key-pair-file ~/.ssh/<your-key>.pem
 spark-submit --master yarn --deploy-mode cluster --class <class> <s3_path_to_jar> <parameters>
 
 ```
